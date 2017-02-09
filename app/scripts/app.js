@@ -29,6 +29,26 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+      .when('/store', {
+        templateUrl: 'views/store.html',
+        controller: 'StoreCtrl',
+        controllerAs: 'store'
+      })
+      .when('/product', {
+        templateUrl: 'views/product.html',
+        controller: 'ProductCtrl',
+        controllerAs: 'product'
+      })
+      .when('/category', {
+        templateUrl: 'views/category.html',
+        controller: 'CategoryCtrl',
+        controllerAs: 'category'
+      })
+      .when('/cart', {
+        templateUrl: 'views/cart.html',
+        controller: 'CartCtrl',
+        controllerAs: 'cart'
+      })
       .otherwise({
         redirectTo: '/'
       });
